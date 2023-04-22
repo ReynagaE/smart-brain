@@ -77,7 +77,7 @@ class App extends Component{
       .then(response => {
         if (response) {
           fetch('https://smart-brain-backend-e5cw.onrender.com/image', {
-            mode: 'cors',
+            mode: 'no cors',
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
@@ -93,7 +93,7 @@ class App extends Component{
         this.displayFaceBox(this.calculateFaceLocation(response))
       })
       .catch(err => console.log(err));
-      res.setHeader('Access-Control-Allow-Origin', '*');
+      
   }
 
   onRouteChange = (route) => {

@@ -19,7 +19,7 @@ class Signin extends React.Component {
 
     onSubmitSignIn = () => {
         fetch('https://smart-brain-backend-e5cw.onrender.com/signin', {
-            mode: 'cors',
+            mode: 'no cors',
             method: 'post',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
@@ -34,7 +34,7 @@ class Signin extends React.Component {
                 this.props.onRouteChange('home');
             }
         })
-        res.setHeader('Access-Control-Allow-Origin', '*');
+        
     }
 
     render() {
