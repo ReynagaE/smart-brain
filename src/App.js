@@ -93,6 +93,7 @@ class App extends Component{
         this.displayFaceBox(this.calculateFaceLocation(response))
       })
       .catch(err => console.log(err));
+      res.setHeader('Access-Control-Allow-Origin', '*');
   }
 
   onRouteChange = (route) => {
