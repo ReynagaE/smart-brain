@@ -40,7 +40,7 @@ class Register extends React.Component {
                 this.props.onRouteChange('home');
             }
         })
-        response.setHeader('Access-Control-Allow-Origin', '*');
+        res.setHeader('Access-Control-Allow-Origin', '*');
     }
 
     render () {
