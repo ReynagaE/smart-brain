@@ -34,7 +34,7 @@ class Signin extends React.Component {
                 this.props.onRouteChange('home');
             }
         })
-        res.setHeader('Access-Control-Allow-Origin', '*');
+        response.setHeader('Access-Control-Allow-Origin', '*');
     }
 
     render() {
