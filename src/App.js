@@ -77,7 +77,7 @@ class App extends Component{
       .then(response => {
         if (response) {
           fetch('https://smart-brain-backend-e5cw.onrender.com/image', {
-            mode: 'no cors',
+            
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
